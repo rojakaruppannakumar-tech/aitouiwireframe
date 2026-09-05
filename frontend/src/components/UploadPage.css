@@ -1,0 +1,111 @@
+/* src/components/UploadPage.css */
+.upload-page-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 32px;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  text-align: center;
+}
+
+.upload-page-container h2 {
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.upload-page-container .subtitle {
+  color: var(--text-muted);
+  margin-bottom: 32px;
+}
+
+.upload-dropzone {
+  border: 2px dashed var(--border-color);
+  border-radius: 12px;
+  padding: 48px 20px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.02);
+  transition: all 0.2s ease;
+}
+
+.upload-dropzone:hover {
+  border-color: var(--primary);
+  background: rgba(79, 70, 229, 0.05);
+}
+
+.upload-icon {
+  color: var(--primary);
+  margin-bottom: 16px;
+}
+
+.browse-btn {
+  margin-top: 16px;
+  background: var(--border-color);
+  color: var(--text-main);
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.preview-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-preview-card {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--bg-dark);
+}
+
+.preview-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.file-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.remove-btn {
+  background: transparent;
+  color: var(--text-muted);
+}
+
+.remove-btn:hover {
+  color: var(--accent-red);
+}
+
+.img-wrapper img {
+  max-width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  padding: 16px;
+}
+
+.generate-btn {
+  background-color: var(--accent-green);
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+.generate-btn:hover {
+  background-color: #059669;
+}

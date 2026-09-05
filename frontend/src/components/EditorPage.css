@@ -1,0 +1,194 @@
+/* src/components/EditorPage.css */
+.editor-page-container {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 64px);
+  background: var(--bg-dark);
+}
+
+.editor-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border-color);
+  height: 56px;
+}
+
+.editor-toolbar h2 {
+  font-size: 1.1rem;
+}
+
+.three-panel-layout {
+  display: grid;
+  grid-template-columns: 240px 1fr 300px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.editor-panel {
+  background: var(--bg-card);
+  border-right: 1px solid var(--border-color);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.property-panel {
+  border-right: none;
+  border-left: 1px solid var(--border-color);
+}
+
+.panel-desc {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.palette-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.palette-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-dark);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  width: 100%;
+}
+
+.palette-item:hover {
+  border-color: var(--primary);
+  background: rgba(79, 70, 229, 0.1);
+}
+
+.center-workspace {
+  background: #090d16;
+  padding: 24px;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.canvas-wrapper {
+  background: repeating-conic-gradient(#1e293b 0% 25%, #0f172a 0% 50%) 50% / 20px 20px;
+  padding: 30px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.mockup-canvas {
+  background-color: #ffffff;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.delete-btn {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--accent-red);
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.delete-btn:hover {
+  background: var(--accent-red);
+  color: white;
+}
+
+.properties-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.form-group input {
+  background: var(--bg-dark);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  padding: 8px 10px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.disabled-input {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.export-dropdown-container {
+  position: relative;
+}
+
+.export-main-btn {
+  background: var(--primary);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+
+.export-menu {
+  position: absolute;
+  right: 0;
+  top: 42px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3);
+  z-index: 100;
+}
+
+.export-menu button {
+  background: transparent;
+  color: var(--text-main);
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+  font-size: 0.85rem;
+}
+
+.export-menu button:hover {
+  background: var(--border-color);
+}
